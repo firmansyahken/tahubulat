@@ -30,19 +30,19 @@ function Render() {
     priceTelur.innerText = data.lv_telur >= lvTelur.length ? "Max" : lvTelur[data.lv_telur - 1]
     priceMinyak.innerText = data.lv_minyak >= lvMinyak.length ? "Max" : lvMinyak[data.lv_minyak - 1]
 
-    if(data.coin < lvTahu[data.lv_tahu]) {
+    if(data.coin < lvTahu[data.lv_tahu - 1]) {
         btnTahu.style.backgroundColor = "#FF4E6E"
     } else {
         btnTahu.style.backgroundColor = "#73EA5F"
     }
 
-    if(data.coin < lvTelur[data.lv_telur]) {
+    if(data.coin < lvTelur[data.lv_telur - 1]) {
         btnTelur.style.backgroundColor = "#FF4E6E"
     } else {
         btnTelur.style.backgroundColor = "#73EA5F"
     }
 
-    if(data.coin < lvMinyak[data.lv_minyak]) {
+    if(data.coin < lvMinyak[data.lv_minyak - 1]) {
         btnMinyak.style.backgroundColor = "#FF4E6E"
     } else {
         btnMinyak.style.backgroundColor = "#73EA5F"
