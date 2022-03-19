@@ -89,8 +89,8 @@ function upgradeTahu() {
         return alert('Uang Lo Ga Cukup')
     }
     
-    data.lv_tahu += 1   
     data.coin -= lvTahu[data.lv_tahu - 1]
+    data.lv_tahu += 1   
     data.price += 50
     storeData()
     Render()
@@ -106,9 +106,9 @@ function upgradeTelur() {
         return alert('Uang Lo Ga Cukup')
     }
 
-    data.lv_telur += 1  
     data.coin -= lvTelur[data.lv_telur - 1]
-    data.price += 75
+    data.lv_telur += 1  
+    data.price += 100
     storeData()
     Render()
     SFX()
@@ -123,9 +123,9 @@ function upgradeMinyak() {
         return alert('Uang Lo Ga Cukup')
     }
 
-    data.lv_minyak += 1  
     data.coin -= lvMinyak[data.lv_minyak - 1]
-    data.price += 100
+    data.lv_minyak += 1  
+    data.price += 150
 
     storeData()
     Render()
