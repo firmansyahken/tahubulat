@@ -7,7 +7,7 @@ var data = JSON.parse(localStorage.getItem('player_data')) || {
 } 
 
 var lvTahu = [3000, 10000, 15000, 25000, 50000]
-var lvTelur = [25000, 15000, 30000, 50000, 70000]
+var lvTelur = [15000, 25000, 30000, 50000, 70000]
 var lvMinyak = [15000, 35000, 80000, 100000, 150000]
 var sfx = ['1.mp3', '2.mp3', '3.mp3', '4.mp3']
 
@@ -26,9 +26,9 @@ let current = 0;
 function Render() {
     coin.innerText = kFormatter(data.coin)
     price.innerText = data.price
-    priceTahu.innerText = lvTahu[data.lv_tahu] || "Max"
-    priceTelur.innerText = lvTelur[data.lv_telur] || "Max"
-    priceMinyak.innerText = lvMinyak[data.lv_minyak] || "Max"
+    priceTahu.innerText = lvTahu[data.lv_tahu - 1] || "Max"
+    priceTelur.innerText = lvTelur[data.lv_telur - 1] || "Max"
+    priceMinyak.innerText = lvMinyak[data.lv_minyak - 1] || "Max"
 
     if(data.coin < lvTahu[data.lv_tahu]) {
         btnTahu.style.backgroundColor = "#FF4E6E"
