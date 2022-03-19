@@ -91,7 +91,7 @@ function upgradeTahu() {
     
     data.lv_tahu += 1   
     data.coin -= lvTahu[data.lv_tahu - 1]
-    data.price += 10
+    data.price += 50
     storeData()
     Render()
     SFX()
@@ -108,7 +108,7 @@ function upgradeTelur() {
 
     data.lv_telur += 1  
     data.coin -= lvTelur[data.lv_telur - 1]
-    data.price += 25
+    data.price += 75
     storeData()
     Render()
     SFX()
@@ -125,7 +125,7 @@ function upgradeMinyak() {
 
     data.lv_minyak += 1  
     data.coin -= lvMinyak[data.lv_minyak - 1]
-    data.price += 50
+    data.price += 100
 
     storeData()
     Render()
