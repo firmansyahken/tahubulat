@@ -26,9 +26,9 @@ let current = 0;
 function Render() {
     coin.innerText = kFormatter(data.coin)
     price.innerText = data.price
-    priceTahu.innerText = lvTahu[data.lv_tahu - 1] || "Max"
-    priceTelur.innerText = lvTelur[data.lv_telur - 1] || "Max"
-    priceMinyak.innerText = lvMinyak[data.lv_minyak - 1] || "Max"
+    priceTahu.innerText = data.lv_tahu >= lvTahu.length ? "Max" : lvTahu[data.lv_tahu - 1]
+    priceTelur.innerText = data.lv_telur >= lvTelur.length ? "Max" : lvTelur[data.lv_telur - 1]
+    priceMinyak.innerText = data.lv_minyak >= lvMinyak.length ? "Max" : lvMinyak[data.lv_minyak - 1]
 
     if(data.coin < lvTahu[data.lv_tahu]) {
         btnTahu.style.backgroundColor = "#FF4E6E"
