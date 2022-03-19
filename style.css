@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.game {
+    max-width: 380px;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.game .main {
+    background-image: url(assets/bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.game .main .header {
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+}
+
+.game .main .header .coin {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    background-color: white;
+    padding: 0.3rem 0.5rem;
+    border-radius: 10px;
+    width: 45%;
+    box-sizing: border-box;
+}
+
+
+.game .main .header .price {
+    column-gap: 10px;
+    background-color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 10px;
+    width: 40%;
+    box-sizing: border-box;
+}
+
+.game .main .tahu {
+    padding: 5rem 0;
+    height: 150px;
+}
+
+.game .main .tahu p {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.game .main .tahu img {
+    width: 150px;
+    margin: auto;
+    display: block;
+    transition: all ease-out 50ms;
+}
+
+.game .main .tahu img.active {
+    transform: translate(0, -10px);
+}
+
+.game .main .items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #F2F2F2;
+    padding: 1rem;
+    box-sizing: border-box;
+    column-gap: 20px;
+}
+
+.game .main .items .item .item_main {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.game .main .items .item .item_main img {
+    margin: auto;
+    display: block;
+}
+
+.game .main .items .item button {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color:#73EA5F;
+    padding: 0.4rem;
+    box-sizing: border-box;
+    color:white;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: all ease-in .3s;
+}
+
+button:hover {
+    transform: scale(0.98);
+}
+
+.game .main .items .item p {
+    text-align: center;
+    margin-top: 5px;
+}
